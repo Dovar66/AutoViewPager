@@ -18,7 +18,7 @@ public class DemoActivity extends AppCompatActivity {
     private AutoViewPager mViewPager;//横向自动轮播
 
     private List<View> list02;//数据
-    private HorizonVerticalViewPager viewPager_vertical;//纵向自动轮播
+    private AutoViewPager viewPager_vertical;//纵向自动轮播
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,7 +76,7 @@ public class DemoActivity extends AppCompatActivity {
         configVP(mViewPager, 200);
 
         //初始化纵向Viewpager
-        viewPager_vertical = (HorizonVerticalViewPager) findViewById(R.id.viewpager02);
+        viewPager_vertical = (AutoViewPager) findViewById(R.id.viewpager02);
         AutoViewPagerAdapter adapter02 = new AutoViewPagerAdapter(this, list02);
         viewPager_vertical.setAdapter(adapter02);
         configVP(viewPager_vertical, 500);
