@@ -15,10 +15,7 @@ import java.util.List;
 
 public class DemoActivity extends AppCompatActivity {
     private List<View> list01;//数据
-    private AutoViewPager mViewPager;//横向自动轮播
-
     private List<View> list02;//数据
-    private AutoViewPager viewPager_vertical;//纵向自动轮播
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,13 +67,13 @@ public class DemoActivity extends AppCompatActivity {
     public void setViewPager() {
         initdata();
         //初始化横向ViewPager
-        mViewPager = (AutoViewPager) findViewById(R.id.viewpager01);
+        AutoViewPager mViewPager = (AutoViewPager) findViewById(R.id.viewpager01);
         AutoViewPagerAdapter adapter01 = new AutoViewPagerAdapter(this, list01);
         mViewPager.setAdapter(adapter01);
         configVP(mViewPager, 200);
 
         //初始化纵向Viewpager
-        viewPager_vertical = (AutoViewPager) findViewById(R.id.viewpager02);
+        AutoViewPager viewPager_vertical = (AutoViewPager) findViewById(R.id.viewpager02);
         AutoViewPagerAdapter adapter02 = new AutoViewPagerAdapter(this, list02);
         viewPager_vertical.setAdapter(adapter02);
         configVP(viewPager_vertical, 500);
