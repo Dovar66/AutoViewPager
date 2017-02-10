@@ -12,8 +12,8 @@ import android.view.animation.AccelerateInterpolator;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
+
 import java.lang.reflect.Field;
-import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 /**
@@ -180,6 +180,9 @@ public class AutoViewPager extends ViewPager {
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
+        if (isVertical){
+            swapXY(event);
+        }
         oldx = (int) event.getX();
         oldy = (int) event.getY();
         int mMoveX = 0;

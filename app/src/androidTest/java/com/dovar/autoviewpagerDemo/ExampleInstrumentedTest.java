@@ -1,4 +1,4 @@
-package com.dovar.autoviewpager;
+package com.dovar.autoviewpagerDemo;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

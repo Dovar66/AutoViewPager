@@ -1,4 +1,4 @@
-package com.dovar.autoviewpager;
+package com.dovar.autoviewpagerDemo;
 
 import org.junit.Test;
 

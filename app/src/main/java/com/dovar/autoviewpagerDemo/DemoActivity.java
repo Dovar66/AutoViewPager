@@ -1,14 +1,14 @@
-package com.dovar.autoviewpager;
+package com.dovar.autoviewpagerDemo;
 
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.dovar.autoviewpager.AutoViewPager;
 
 import java.util.ArrayList;
 import java.util.List;

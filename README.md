@@ -1,2 +1,2 @@
-# AutoViewPager
+# com.dovar.autoviewpager.AutoViewPager
 一个实现自动轮播并且可以无限轮播的viewpager，可修改滑动方向为纵向滑动

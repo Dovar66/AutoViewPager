@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.dovar.autoviewpager.DemoActivity">
+    tools:context="com.dovar.autoviewpagerDemo.DemoActivity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -25,14 +25,13 @@
         android:layout_margin="@dimen/activity_horizontal_margin"
         android:text="纵向ViewPager" />
 
-    <com.dovar.autoviewpager.HorizonVerticalViewPager
+    <com.dovar.autoviewpager.AutoViewPager
         android:id="@+id/viewpager02"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginStart="@dimen/activity_horizontal_margin"
         android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
         android:background="@color/colorAccent"
-        app:isVertical="true">
+        app:isVertical="true" />
 
-    </com.dovar.autoviewpager.HorizonVerticalViewPager>
 </LinearLayout>
