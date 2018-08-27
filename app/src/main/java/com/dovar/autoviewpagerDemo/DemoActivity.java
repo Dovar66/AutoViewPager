@@ -86,7 +86,7 @@ public class DemoActivity extends AppCompatActivity {
         //修改viewpager滑动速度
         vp.setSpeed(speed);
         //设置自动跳转间隔
-        vp.setTime(5000);
+        vp.setTime(3000);
         //开始自动轮播
         vp.startTurn();
     }

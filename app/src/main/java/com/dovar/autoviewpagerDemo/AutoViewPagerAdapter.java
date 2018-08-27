@@ -1,7 +1,6 @@
 package com.dovar.autoviewpagerDemo;
 
 import android.content.Context;
-import android.support.v4.view.PagerAdapter;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -11,18 +10,15 @@ import java.util.List;
  * 自动循环滑动的vp的适配器
  * Created by Administrator on 2016/10/8 0008.
  */
-public class AutoViewPagerAdapter extends PagerAdapter {
-    Context mContext;
-    List<View> mList;
+public class AutoViewPagerAdapter extends com.dovar.autoviewpager.AutoViewPagerAdapter<View> {
 
-    public AutoViewPagerAdapter(Context mContext, List<View> mList) {
-        this.mContext = mContext;
-        this.mList = mList;
+    public AutoViewPagerAdapter(Context mContext) {
+        super(mContext);
     }
 
-    @Override
-    public int getCount() {
-        return mList.size();
+    public AutoViewPagerAdapter(Context mContext, List<View> views) {
+        super(mContext);
+        addDatas(views);
     }
 
     @Override
@@ -32,7 +28,7 @@ public class AutoViewPagerAdapter extends PagerAdapter {
 
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
-        View view=mList.get(position);
+        View view = getItem(position);
         container.addView(view);
         return view;
     }
